@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hästar – fakta, skötsel & glädje</title>
+  <meta name="description" content="En vänlig och informativ sida om hästar: raser, skötsel, utrustning, bildgalleri och ett litet quiz." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <a class="skip-link" href="#main">Hoppa till innehåll</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Startsida Hästar">
+        <span class="brand-logo" aria-hidden="true">🐴</span>
+        <span class="brand-text">Hästar</span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Öppna menyn">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <nav id="primary-nav" class="nav" aria-label="Primär">
+        <ul>
+          <li><a href="#om">Om hästar</a></li>
+          <li><a href="#raser">Raser</a></li>
+          <li><a href="#skotsel">Skötsel</a></li>
+          <li><a href="#galleri">Galleri</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h1>Allt om hästar</h1>
+          <p>Vänliga giganter med kraft, mod och personlighet. Lär dig mer om raser, skötsel och hur du bygger ett gott partnerskap.</p>
+          <a class="btn btn-primary" href="#raser">Utforska raser</a>
+          <a class="btn btn-outline" href="#skotsel">Lär dig skötsel</a>
+        </div>
+        <figure class="hero-figure" aria-label="Illustration av häst och ryttare">
+          <!-- Dekorativ gradientruta med ”hästsilhuett” i CSS -->
+          <div class="hero-art" role="img" aria-label="Stiliserad häst i solnedgång"></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Om -->
+    <section id="om" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>Om hästar</h2>
+          <p>
+            Hästen har följt människan i tusentals år – i arbete, sport och som vän. 
+            En häst är ett flockdjur med starkt flyktbeteende. Trygghet, tydlig kommunikation och konsekvent hantering är nycklar till ett fint samspel.
+          </p>
+          <ul class="icon-list">
+            <li>🌿 Växtätare med känsligt matsmältningssystem</li>
+            <li>👂 Skarpa sinnen och kroppsspråk</li>
+            <li>🏃 Uthålliga och snabba – byggda för rörelse</li>
+          </ul>
+        </div>
+        <aside class="card note">
+          <h3>Snabbfakta</h3>
+          <dl class="facts">
+            <div><dt>Livslängd</dt><dd>25–30 år (ibland längre)</dd></div>
+            <div><dt>Mankhöjd</dt><dd>Ca 140–180 cm (rasberoende)</dd></div>
+            <div><dt>Vikt</dt><dd>300–700 kg</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Raser -->
+    <section id="raser" class="section alt">
+      <div class="container">
+        <h2>Populära raser</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Islandshäst</h3>
+            <p>Känd för extra gångarterna tölt och pass. Robust, trygg och allround.</p>
+            <button class="btn-link more" data-modal-target="modal-island">Läs mer</button>
+          </article>
+          <article class="card">
+            <h3>Arabiskt fullblod</h3>
+            <p>Ädel, uthållig och intelligent. Vanlig inom distansritt.</p>
+            <button class="btn-link more" data-modal-target="modal-arab">Läs mer</button>
+          </article>
+          <article class="card">
+            <h3>Svenskt varmblod</h3>
+            <p>Sporthäst med kapacitet för hoppning och dressyr.</p>
+            <button class="btn-link more" data-modal-target="modal-svbl">Läs mer</button>
+          </article>
+          <article class="card">
+            <h3>Shetlandsponny</h3>
+            <p>Liten men stark och smart – perfekt barn- och körponny.</p>
+            <button class="btn-link more" data-modal-target="modal-shet">Läs mer</button>
+          </article>
+        </div>
+      </div>
+
+      <!-- Modaler -->
+      <dialog id="modal-island" class="modal">
+        <form method="dialog" class="modal-box">
+          <h3>Islandshäst</h3>
+          <p>Härdig, social och ofta lätt att hantera. Tölt ger bekväm och snabb framfart.</p>
+          <button class="btn" value="close">Stäng</button>
+        </form>
+      </dialog>
+      <dialog id="modal-arab" class="modal">
+        <form method="dialog" class="modal-box">
+          <h3>Arabiskt fullblod</h3>
+          <p>Utmärkt kondition, torr exteriör och hög svansföring. Kräver mjuk ridning.</p>
+          <button class="btn" value="close">Stäng</button>
+        </form>
+      </dialog>
+      <dialog id="modal-svbl" class="modal">
+        <form method="dialog" class="modal-box">
+          <h3>Svenskt varmblod</h3>
+          <p>Avlad för rid- och sportegenskaper. Trivs med tydlig träning och variation.</p>
+          <button class="btn" value="close">Stäng</button>
+        </form>
+      </dialog>
+      <dialog id="modal-shet" class="modal">
+        <form method="dialog" class="modal-box">
+          <h3>Shetlandsponny</h3>
+          <p>Tuff och lekfull. Passar körning och lättare ridning – kräver tydliga gränser.</p>
+          <button class="btn" value="close">Stäng</button>
+        </form>
+      </dialog>
+    </section>
+
+    <!-- Skötsel -->
+    <section id="skotsel" class="section">
+      <div class="container grid-2">
+        <div>
+          <h2>Skötsel & välmående</h2>
+          <ol class="steps">
+            <li><strong>Foder:</strong> Grovfoder (hö/hösilage) som bas, kraftfoder vid behov.</li>
+            <li><strong>Rörelse:</strong> Daglig utevistelse och varierad träning.</li>
+            <li><strong>Hovar:</strong> Hovslagare var 6–8:e vecka.</li>
+            <li><strong>Tänder:</strong> Koll 1–2 ggr/år av veterinär/tandläkare.</li>
+            <li><strong>Sällskap:</strong> Hästar mår bäst med hästkompisar.</li>
+          </ol>
+        </div>
+        <form id="newsletter" class="card form" novalidate>
+          <h3>Få tips i mejlen</h3>
+          <p>Nyheter, skötselchecklistor och små övningar 1–2 ggr/mån.</p>
+          <label class="field">
+            <span>E-post</span>
+            <input type="email" name="email" placeholder="du@exempel.se" required />
+          </label>
+          <button type="submit" class="btn btn-primary">Prenumerera</button>
+          <p id="newsletter-msg" class="form-msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Galleri -->
+    <section id="galleri" class="section alt">
+      <div class="container">
+        <h2>Galleri</h2>
+        <div class="gallery" role="list">
+          <!-- Platshållarbilder gjorda med CSS bakgrunder -->
+          <button class="gallery-item" role="listitem" data-full="1" aria-label="Bild 1 – brun häst på äng"></button>
+          <button class="gallery-item" role="listitem" data-full="2" aria-label="Bild 2 – svart häst i rörelse"></button>
+          <button class="gallery-item" role="listitem" data-full="3" aria-label="Bild 3 – islandshäst i tölt"></button>
+          <button class="gallery-item" role="listitem" data-full="4" aria-label="Bild 4 – ponny i stallgång"></button>
+        </div>
+      </div>
+
+      <dialog id="lightbox" class="modal">
+        <form method="dialog" class="modal-box">
+          <img id="lightbox-img" alt="Förstorad bild av häst" />
+          <button class="btn" value="close">Stäng</button>
+        </form>
+      </dialog>
+    </section>
+
+    <!-- Quiz -->
+    <section id="quiz" class="section">
+      <div class="container">
+        <h2>Mini-quiz: Känn din häst</h2>
+        <form id="quiz-form" class="quiz">
+          <fieldset>
+            <legend>1) Vad är hästens basföda?</legend>
+            <label><input type="radio" name="q1" value="fel" /> Kornflingor</label>
+            <label><input type="radio" name="q1" value="ratt" /> Grovfoder</label>
+            <label><input type="radio" name="q1" value="fel" /> Godis</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>2) Hur ofta bör hovslagare normalt komma?</legend>
+            <label><input type="radio" name="q2" value="fel" /> Var 3:e månad</label>
+            <label><input type="radio" name="q2" value="ratt" /> Var 6–8:e vecka</label>
+            <label><input type="radio" name="q2" value="fel" /> En gång om året</label>
+          </fieldset>
+
+          <fieldset>
+            <legend>3) Vad mår de flesta hästar bäst av?</legend>
+            <label><input type="radio" name="q3" value="ratt" /> Sällskap med andra hästar</label>
+            <label><input type="radio" name="q3" value="fel" /> Att stå ensamma</label>
+            <label><input type="radio" name="q3" value="fel" /> Att aldrig gå ut</label>
+          </fieldset>
+
+          <button type="submit" class="btn btn-primary">Rätta</button>
+          <p id="quiz-result" class="quiz-result" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section id="kontakt" class="section alt">
+      <div class="container grid-2">
+        <div>
+          <h2>Kontakt</h2>
+          <p>Har du frågor eller vill bidra med bilder och tips? Hör av dig!</p>
+          <ul class="icon-list">
+            <li>✉️ <a href="mailto:hej@hastar.example">hej@hastar.example</a></li>
+            <li>🏡 Stallvägen 1, 123 45 Hästby</li>
+          </ul>
+        </div>
+        <form id="contact-form" class="card form" novalidate>
+          <label class="field">
+            <span>Namn</span>
+            <input type="text" name="name" required />
+          </label>
+          <label class="field">
+            <span>Meddelande</span>
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-outline">Skicka</button>
+          <p id="contact-msg" class="form-msg" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Hästar. All rights förmodligen reserverade 🐎</p>
+      <a class="to-top" href="#top" aria-label="Till toppen">Till toppen ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
